@@ -13,3 +13,12 @@ To run this app on your computer:
 4. That's it! now you run the app:```python app.py```
 
 Go to https://127.0
+
+
+### How to push changes:
+
+git add .
+
+git commit (and then u write the commit message)
+
+git push
