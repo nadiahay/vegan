@@ -1,3 +1,32 @@
+### CUSTOM IGNORES
+## SECRETS (DON'T TOUCH THIS)
+secrets.json
+.env
+.env2
+2.env
+main.css
+error.text
+*_out.js
+*_out.css
+
+app/promo_qrcodes/out/
+webpack-demo
+*LICENSE.txt
+
+### RANDOM STUFF
+.vscode
+*.zip
+*.csv
+# brownie coverage report
+*coverage.json
+
+# node stuff
+npmrc
+npm-debug.log
+.npmrc
+node_modules
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
