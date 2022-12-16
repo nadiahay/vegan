@@ -8,6 +8,8 @@ main.css
 error.text
 *_out.js
 *_out.css
+main.min.css
+!main.css
 
 app/promo_qrcodes/out/
 webpack-demo
