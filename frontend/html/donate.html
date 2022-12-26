@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<div>
+  <div class="container mx-auto">
+    <div class="py-16 lg:py-20">
+      <div>
+        <img src="static/img/icon-uses.png" alt="icon uses" />
+      </div>
+      <h1 class="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
+        /donate
+      </h1>
+      <div class="pr-2 pt-4">
+        <span class="font-body text-xl font-light text-primary dark:text-white">
+          Help the
+          <a href="https://goo.gl/maps/mC5L5zBm4H6seoHS8" target="_blank" class="border-b border-green">
+            <span
+              class="font-medium text-green hover:text-secondary dark:text-green-light dark:hover:text-secondary">Torrevieja
+              Animal Shelter</span>
+          </a>
+        </span>
+      </div>
+
+      <div class="pt-8 lg:pt-12">
+        <h3 class="pb-4 font-body text-2xl font-semibold text-primary dark:text-white">
+          Donate cryptocurrency
+        </h3>
+        <p class="pb-5 font-body text-lg font-light text-primary dark:text-white">
+          I volunteer every summer at the Animal Shelter in Torrevieja, Spain.<br>They really need some help if you can
+          spare it. If you'd like to donate, cryptocurrency is the simplest way to do it.
+
+          <br><br>
+          Here are the addresses on the main networks:
+        </p>
+        <ul class="list-disc pl-10">
+          <li class="font-body text-lg font-light text-primary dark:text-white">
+            <span class="font-medium">Ethereum: </span>
+            <a target="_blank" href="https://etherscan.io/address/0xFd94f4Daf1fCBc4150B27c8184a8271c7943d01A"
+              class="font-medium text-green underline hover:text-secondary dark:text-green-light dark:hover:text-secondary">0xFd94f4Daf1fCBc4150B27c8184a8271c7943d01A</a>
+            <img src="static/img/ethereum_address_qr.png" alt="ethereum address qr" class="m-2 w-32 h-32" />
+          </li>
+          <li class="pt-5 font-body text-lg font-light text-primary dark:text-white">
+            <span class="font-medium">Bitcoin: </span>
+            <a target="_blank"
+              href="https://www.blockchain.com/explorer/addresses/btc/bc1qy4hgxg592ggwhxxz5k63gea28ekd4ncxm3jys5"
+              class="font-medium text-green underline hover:text-secondary dark:text-green-light dark:hover:text-secondary">bc1qy4hgxg592ggwhxxz5k63gea28ekd4ncxm3jys5</a>
+            <img src="static/img/bitcoin_address_qr.png" alt="bitcoin address qr" class="m-2 w-32 h-32" />
+          </li>
+          <li class="pt-5 font-body text-lg font-light text-primary dark:text-white">
+            <span class="font-medium">Polygon: </span>
+            <a target="_blank" href="https://polygonscan.com/address/0xFd94f4Daf1fCBc4150B27c8184a8271c7943d01A"
+              class="font-medium text-green underline hover:text-secondary dark:text-green-light dark:hover:text-secondary">0xFd94f4Daf1fCBc4150B27c8184a8271c7943d01A</a>
+            <img src="static/img/ethereum_address_qr.png" alt="polygon address qr" class="m-2 w-32 h-32" />
+          </li>
+        </ul>
+        <p class="pt-5 font-body text-lg font-light text-primary dark:text-white">
+          Since donations are rare, if you make one, please <a href="mailto:barbara.montenegro@outlook.com"
+            class="font-medium text-green underline hover:text-secondary dark:text-green-light dark:hover:text-secondary">notify
+            me</a> so I can forward them immediately. You'll probably receive a cute pic of a dog or cat that's being
+          helped by your money! Also, if you want it as an <span class="text-secondary font-bold">NFT</span>, I can
+          totally do that too!
+        </p>
+        <p class="pt-5 font-body text-lg font-light text-primary dark:text-white">
+          If there are <span class="italic">too many</span> donations (one can wish), funds will be directed towards
+          either <a href="https://elrefugio.org/adopta"
+            class="font-medium text-green underline hover:text-secondary dark:text-green-light dark:hover:text-secondary">El
+            Refugio</a> or <a href="https://www.lagatoteca.es/adopta"
+            class="font-medium text-green underline hover:text-secondary dark:text-green-light dark:hover:text-secondary">Gatoteca</a>,
+          both of whom I can vouch for doing good work.
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

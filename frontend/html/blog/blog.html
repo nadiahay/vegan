@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="border-black lg:divide-y pt-32 pb-24 bg-teal">
+
+
+    <div class="xl:max-w-5xl lg:max-w-2xl md:max-w-xl sm:max-w-100 mx-auto">
+
+        <!-- cards of blogposts -->
+        {% for post in posts %}
+        <!-- {{ post.content_preview | safe }}
+        <p class="text-sm text-gray-500">{{ post.date }}</p>
+        <p class="text-sm text-gray-500">{{ post.author }}</p>
+        <p class="text-sm text-gray-500">{{ post.tags }}</p> -->
+        <div class="blogpost bg-white p-12 pt-6 mb-12">
+            <p class="text-sm text-gray-500">{{ post.date }} | {{ post.author }}</p>
+            <p class="text-sm text-gray-500">{{ post.tags }}</p>
+            {{ post.content_preview | safe }}
+            <a href="blog/{{post.slug}}" class="text-secondary underline">Read more</a>
+        </div>
+        {% endfor %}
+        <div>
+
+</section>
+
+{% endblock %}

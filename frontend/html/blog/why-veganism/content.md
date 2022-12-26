@@ -1,0 +1,13 @@
+# Why veganism is morally correct
+
+Veganism is the practice of abstaining from the use of animal products, particularly in diet, and an associated philosophy that rejects the commodity status of animals. Veganism is a way of living that seeks to exclude, as far as is possible and practical, all forms of exploitation of, and cruelty to, animals for food, clothing or any other purpose.
+
+There are several reasons why veganism is the morally correct choice.
+
+First and foremost, veganism is a matter of justice and equality. All sentient beings, whether human or non-human, have a right to be treated with respect and to live a life free from suffering. Veganism recognizes that animals are not mere resources to be used and exploited for human benefit, but rather they are individuals with their own interests, desires, and feelings. By choosing to be vegan, we can show respect for the inherent value of all animals and extend moral consideration to them.
+
+Secondly, veganism is a way to reduce suffering. The production of animal-based products involves immense suffering for the animals involved. For example, animals used for food are often confined to small, crowded spaces, subjected to painful procedures, and denied the opportunity to engage in natural behaviors. The dairy and egg industries are also notoriously cruel, with cows and chickens suffering from physical and psychological harm. In contrast, plant-based diets can be produced in ways that do not involve the exploitation of animals and can even be more environmentally sustainable. By choosing a vegan lifestyle, we can play a part in reducing the suffering of animals and creating a more compassionate world.
+
+Thirdly, veganism is good for our health. A well-planned vegan diet can provide all the nutrients we need to be healthy, and numerous studies have shown that vegans tend to have lower rates of heart disease, high blood pressure, and certain types of cancer. Veganism can also help to reduce our environmental footprint, as the production of animal-based products is a major contributor to climate change, deforestation, and water pollution. By choosing veganism, we can not only improve our own health, but also contribute to the health of the planet and its inhabitants.
+
+In conclusion, veganism is the morally correct choice because it is a matter of justice and equality, it reduces suffering, and it is good for our health and the health of the planet. By choosing veganism, we can live in a way that is consistent with our values and that respects the inherent value of all beings.
