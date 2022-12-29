@@ -196,9 +196,8 @@ def get_blog_post(post_path, post):
 # Launch.
 # ----------------------------------------------------------------------------#
 
-# Default port:
-if __name__ == "__main__":
-    
+
+def main():
     # generate all blog posts
     get_all_blog_content()
 
@@ -207,3 +206,8 @@ if __name__ == "__main__":
         TEMPLATES_AUTO_RELOAD=True,
     )
     app.run()
+
+# Default port:
+if __name__ == "__main__":
+    main()
+    
