@@ -10,6 +10,7 @@ error.text
 *_out.css
 main.min.css
 !main.css
+*.sh
 
 app/promo_qrcodes/out/
 webpack-demo
