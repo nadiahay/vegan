@@ -5,7 +5,30 @@
 <section class="border-black lg:divide-y pt-32 pb-24 bg-teal">
 
 
-    <div class="xl:max-w-5xl lg:max-w-2xl md:max-w-xl sm:max-w-100 mx-auto">
+    <div class="xl:max-w-3xl lg:max-w-2xl md:max-w-xl sm:max-w-100 mx-auto">
+
+        <div>
+            <img src="static/img/icon-blog.png" alt="icon envelope" />
+          </div>
+
+          <h1 class="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
+            The Vegan Blog
+          </h1>
+
+          <div class="pt-3 sm:w-3/4">
+            <p class="font-body text-xl font-light text-primary dark:text-white">
+              Nadias thoughts on veganism!
+            </p>
+          </div>
+
+          <form class="flex flex-col py-12 sm:flex-row">
+            <input type="email" id="subscribe" placeholder="Drop that email here…"
+              class="w-full border border-primary bg-grey-lightest px-5 py-4 font-body font-light text-primary placeholder-primary transition-colors focus:border-secondary focus:outline-none focus:ring-2 focus:ring-secondary dark:border-secondary sm:w-1/2" />
+            <button type="submit"
+              class="mt-5 bg-secondary px-10 py-4 font-body text-xl font-semibold text-white hover:bg-green sm:mt-0 md:text-2xl">
+              Subscribe
+            </button>
+          </form>
 
         <!-- cards of blogposts -->
         {% for post in posts %}
@@ -13,7 +36,7 @@
         <p class="text-sm text-gray-500">{{ post.date }}</p>
         <p class="text-sm text-gray-500">{{ post.author }}</p>
         <p class="text-sm text-gray-500">{{ post.tags }}</p> -->
-        <div class="blogpost bg-white p-12 pt-6 mb-12">
+        <div class="blogpost bg-white p-12 pt-6 mb-12 border border-grey-lighter ">
             <p class="text-sm text-gray-500">{{ post.date }} | {{ post.author }}</p>
             <p class="text-sm text-gray-500">{{ post.tags }}</p>
             {{ post.content_preview | safe }}

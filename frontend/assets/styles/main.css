@@ -34,3 +34,155 @@ html {
     @apply mt-8 mb-0 inline-block border border-blue-dark px-5 py-2 font-body font-semibold text-blue-dark no-underline transition-colors hover:bg-primary hover:text-white sm:mb-4;
   }
 }
+
+
+
+
+/* BLOGPOST */
+/* Since we don't edit the blogpost html directly (for ease of use)
+and just generate the html from markdown.  */
+
+
+.blogpost h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.blogpost h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.blogpost h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.blogpost h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.blogpost h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.blogpost p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.blogpost a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.blogpost a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.blogpost a:visited {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.blogpost a:active {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.blogpost a:focus {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.blogpost a:link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.blogpost img {
+  max-width: 100%;
+}
+
+.blogpost blockquote {
+  border-left: 4px solid #000;
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+.blogpost code {
+  background-color: #f5f5f5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.blogpost pre {
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.blogpost ul {
+  list-style: disc;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.blogpost ol {
+  list-style: decimal;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.blogpost li {
+  margin: 0.5rem 0;
+}
+
+.blogpost hr {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1rem 0;
+}
+
+.blogpost table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.blogpost table th {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.blogpost table td {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  text-align: left;
+}
+.blogpost table tr:nth-child(1) {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .blogpost {
+    /* padding: 0; */
+  }
+}

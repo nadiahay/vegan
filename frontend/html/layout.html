@@ -12,7 +12,7 @@
     <meta name="description"
         content="Animals have a voice too. Listen to them. Watch our selection of documentaries, read essays exploring veganism, and take action if you'd like." />
     <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐄</text></svg>"> -->
-    <link rel="icon" href="static/img/cat.png">
+    <link rel="icon" href="{{ url_for('static', filename='/img/cat.png') }}" />
 
 
     <meta property="og:title" content="AnimalVoice: they have one too." />
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
     <!-- <link crossorigin="anonymous" href="{{ url_for('static', filename='styles/main.min.css') }}" media="screen" rel="stylesheet" /> -->
-    <link crossorigin="anonymous" href="static/styles/main.min.css" media="screen" rel="stylesheet" />
+    <link crossorigin="anonymous" href="{{ url_for('static', filename='/styles/main.min.css') }}" media="screen" rel="stylesheet" />
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 
@@ -53,7 +53,7 @@
 <body x-data="global()" x-init="themeInit()" :class="isMobileMenuOpen ? 'max-h-screen overflow-hidden relative' : ''"
     class="dark:bg-primary">
     <div class="flex items-center justify-center p-2" style="background-color: #24c790" x-show="isBannerOpen">
-        <img src="static/img/logo-r.svg" alt="red pixel themes logo" class="mr-4 h-7 w-auto md:h-10">
+        <img src="{{ url_for('static', filename='/img/logo-r.svg') }}" alt="red pixel themes logo" class="mr-4 h-7 w-auto md:h-10">
         <p class="w-auto font-body text-xs font-bold text-white md:text-xl">
             Willing to help? You can donate
             <a class="inline-block text-white underline" href="/donate">here</a>
@@ -67,7 +67,7 @@
         <div class="flex items-center justify-between py-6 lg:py-10">
             <a href="/" class="flex items-center">
                 <span href="/" class="mr-2">
-                    <img src="static/img/cat.png" class="h-14 w-14" alt="logo" />
+                    <img src="{{ url_for('static', filename='/img/cat.png') }}" class="h-14 w-14" alt="logo" />
                 </span>
                 <p class="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
                     Animal Voice
@@ -170,7 +170,7 @@
             <div class="mr-auto flex flex-col items-center sm:flex-row">
                 <a href="/" class="mr-auto sm:mr-6">
                     <!-- <img src="{{ url_for('static', filename='img/logo.svg')}}" alt="logo" /> -->
-                    <img src="static/img/cat.png" class="h-12 w-12" alt="logo" />
+                    <img src="{{ url_for('static', filename='/img/cat.png') }}" class="h-12 w-12" alt="logo" />
                 </a>
                 <p class="pt-5 font-body font-light text-primary dark:text-white sm:pt-0">
                     ©2022 Nadia Hayajneh.
@@ -200,8 +200,7 @@
     </div>
 
     <!-- <script src="{{ url_for('static', filename='js/main.js') }}"></script> -->
-    <script src="static/js/main.js"></script>
-
+    <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
 
 </body>
 

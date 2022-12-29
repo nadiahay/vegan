@@ -1,3 +1,5 @@
+# The environmental impact of meat
+
 The environmental impact of our food choices is a major concern, as the production of food is a major contributor to climate change, deforestation, and other environmental problems. One way to reduce the environmental impact of our food choices is to consider the environmental impacts of consuming meat versus being vegan.
 
 First and foremost, it is important to recognize that the production of animal-based products is a significant contributor to environmental degradation. The production of meat, dairy, and eggs requires large amounts of land, water, and other resources, and generates significant greenhouse gas emissions. In contrast, plant-based diets require fewer resources and generate fewer emissions. For example, it takes significantly more land, water, and other resources to produce a pound of beef than a pound of grains or vegetables. Similarly, the production of meat generates significantly more greenhouse gas emissions than the production of plant-based protein sources.

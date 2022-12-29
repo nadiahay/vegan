@@ -35,9 +35,9 @@ def about():
     return render_template("about.html")
 
 
-# @app.route("/blog")
-# def blog():
-#     return render_template("blog.html")
+@app.route("/blog2")
+def blog2():
+    return render_template("blog.html")
 
 
 @app.route("/help")
