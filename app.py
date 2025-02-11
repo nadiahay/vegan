@@ -5,7 +5,7 @@
 from flask import Flask, render_template, request
 import json
 import os
-import sha3
+import hashlib
 import re
 import markdown
 import datetime
@@ -99,7 +99,9 @@ def get_all_blog_content():
         # call blog_post() to generate content_preview.html file
         if not os.path.exists(
             app.template_folder + "/blog/" + post + "/content_preview.html"
-        ) or not os.path.exists(app.template_folder + "/blog/" + post + "/details.json"):
+        ) or not os.path.exists(
+            app.template_folder + "/blog/" + post + "/details.json"
+        ):
             # generate content_preview.html file (and everything else)
             get_blog_post(app.template_folder + "/blog/" + post + "/", post)
 
@@ -124,6 +126,7 @@ def get_all_blog_content():
     posts = sorted(posts, key=lambda k: k["date"], reverse=True)
     return posts
 
+
 def get_blog_post(post_path, post):
     # load details.json file if it exists, else use default values & save to file
     if os.path.exists(post_path + "details.json"):
@@ -147,7 +150,7 @@ def get_blog_post(post_path, post):
 
     # CHECK IF THE CONTENT HAS CHANGED
     content_md = open(post_path + "content.md", "r").read()
-    content_hash = sha3.keccak_256(content_md.encode("utf-8")).hexdigest()
+    content_hash = hashlib.sha3_256(content_md.encode("utf-8")).hexdigest()
     rerender_flag = False
     # compare to existing hash in details.json
     if details["contentHash"] != content_hash:
@@ -188,7 +191,7 @@ def get_blog_post(post_path, post):
         # save content_preview.html file
         with open(post_path + "content_preview.html", "w") as f:
             f.write(content_preview)
-        
+
     return post_html, details
 
 
@@ -207,7 +210,7 @@ def main():
     )
     app.run()
 
+
 # Default port:
 if __name__ == "__main__":
     main()
-    

@@ -1,6 +1,5 @@
 flask # server framework
 gunicorn # server
-pysha3 # for hashes
 markdown # for blog
 black # for formatting
 pytest # for testing

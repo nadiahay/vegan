@@ -5,9 +5,9 @@
 
 
 import app
-import pytest
+# import pytest
 import os
-import sha3
+import hashlib
 
 
 def test_get_blog_post():
@@ -30,9 +30,10 @@ def test_get_blog_post():
         "tags": "",
         "isPublished": "true",
         "overwriteHtml": "true",
-        "date": "2022-12-29",
-        "contentHash": "5d33a5c6d7c9149fc2a40603c1f1a249d0add248e1ad77edb08e0832905cfd92",
+        "date": "2025-02-11",
+        "contentHash": "e47deee8079b206ced5815beee15fb89a8d8c17aca4aa24b3eeac2acb169e7df",
     }
+
 
 def test_get_all_blog_content():
     # Test that the get_all_blog_content function returns the correct
@@ -44,8 +45,7 @@ def test_get_all_blog_content():
 
 def test_hashing():
     # Test that the hashing function works correctly
-    # Ref: sha3.keccak_256(content_md.encode("utf-8")).hexdigest()
-    string  = "test test test"
-    assert sha3.keccak_256(string.encode("utf-8")).hexdigest() == "5d33a5c6d7c9149fc2a40603c1f1a249d0add248e1ad77edb08e0832905cfd92"
-    assert sha3.keccak_256(string.encode("utf-8")).hexdigest() != "5d33a5c6d7c9149fc2a40603c1f1a249d0add248e1ad77edb08e0832905cfd93"
-    assert sha3.keccak_256(string.encode("utf-8")).hexdigest() != "hello world"
+    string = "test test test"
+    expected_hash = "e47deee8079b206ced5815beee15fb89a8d8c17aca4aa24b3eeac2acb169e7df"
+    assert hashlib.sha3_256(string.encode("utf-8")).hexdigest() == expected_hash
+    assert hashlib.sha3_256(string.encode("utf-8")).hexdigest() != "hello world"

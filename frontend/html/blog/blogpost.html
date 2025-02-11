@@ -1,18 +1,18 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
 
-{% block content %}
+<section class="bg-teal border-black pt-40">
+  <div
+    class="blogpost sm:max-w-100 mx-auto bg-white px-4 py-16 md:max-w-2xl md:px-8 lg:max-w-2xl lg:px-16 xl:max-w-5xl"
+  >
+    {{ post_html | safe }}
+  </div>
 
-<section class="border-black pt-40 bg-teal">
-
-    <div class="blogpost xl:max-w-5xl lg:max-w-2xl md:max-w-2xl sm:max-w-100 px-4 md:px-8 lg:px-16 py-16 mx-auto bg-white">
-        {{ post_html | safe }}
-    </div>
-
-    <!-- back to blog button -->
-    <div class="flex justify-center">
-        <a href="/blog" class="text-center text-white bg-black py-4 px-8 mt-8 mb-12">Back to Blog</a>
-    </div>
-
+  <!-- back to blog button -->
+  <div class="flex justify-center">
+    <a href="/blog" class="mt-8 mb-12 bg-black py-4 px-8 text-center text-white"
+      >Back to Blog</a
+    >
+  </div>
 </section>
 
 {% endblock %}
