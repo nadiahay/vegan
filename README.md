@@ -14,10 +14,15 @@ Animal Voice is about giving a voice to the ones that don't have one: Animals.
 
 To run this app on your computer:
 
-1. Clone this repo: ```git clone https://github.com/nadiahay/vegan.git```
-2. Change into the directory you just created: ```cd vegan```
-3. Install the python dependencies: ```pip install -r requirements.txt```
-4. Compile TailwindCSS: ```cd frontend && npm install && npm run build```
-4. That's it! now you run the app:```cd .. && python app.py```
+1. Clone this repo: `git clone https://github.com/nadiahay/vegan.git`
+2. Change into the directory you just created: `cd vegan`
+3. Install the python dependencies: `pip install -r requirements.txt`
+4. Compile TailwindCSS: `cd frontend && npm install && npm run build`
+5. That's it! now you run the app:`cd .. && python app.py`
 
-Go to 127.0.0.1:5000 in your browser to see the app!
+Go to http://127.0.0.1:5000 in your browser to see the app!
+
+Notes:
+
+- Run `npm run build` after any CSS change to apply effects
+- For development, you can use `cd frontend && npm run develop` to watch for CSS changes

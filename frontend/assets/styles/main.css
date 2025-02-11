@@ -35,13 +35,9 @@ html {
   }
 }
 
-
-
-
 /* BLOGPOST */
 /* Since we don't edit the blogpost html directly (for ease of use)
 and just generate the html from markdown.  */
-
 
 .blogpost h1 {
   font-size: 2.5rem;
